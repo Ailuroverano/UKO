@@ -1,14 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,500;0,600;1,300;1,400;1,500&display=swap');
 
 
-/*!------reset-----*/
+/*!------ reset -----*/
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-
-/*!------header-----*/
+/*!---------------------------------------- index ------------------------------------------*/
+/*!------ header -----*/
 .presentacion{
     display: flex;
     width: 100%;
@@ -17,132 +17,92 @@
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    background-attachment: fixed;
+    background-attachment: fixed; 
 }
 .presentacion h1{
-    font-size: 90px;
+    font-size: 200px;
     font-family: 'Open Sans', sans-serif;
     font-weight: bold;
     color: black;
-    position: relative;
-    top: 10vh;
-    left: 30%;
+    position: absolute;
+    bottom: 55vh;
+    left: 45vh;
+    right: 75vh;
 } 
-.presentacion h2{
-    font-size: 30px;
-    font-family: 'Open Sans', sans-serif;
-    font-weight: 300;
-    color: rgba(0, 0, 0, 0.939);
-    position: relative;
-    top: 15vh;
-    left: 40%;
+.botones{
+    width: 300px;
+    position: absolute;
+    bottom: 45vh;
+    left: 75vh;
+    right: 75vh;
 }
-.presentacion div{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-    top: 20vh;
-    left: 5%;
-}
-.presentacion div a{
+.botones a{
     text-decoration: none;
     color: black; 
     background-color: rgba(255, 255, 255, 0.341);
     padding: 10px;
     margin: 5px 5px 5px 5px;
 }
-.logo-barra{
-    display: flex;
-    justify-content: space-between;
-    margin: 10px 10px 50px 30px;
-    align-items: center;
+.barra-navegacion{
+    margin: 10px 0px 10px 0px;
 }
-.logo-barra img{
-    width: 180px;
-    height: 90px;
-}
-.logo-barra nav{
-    margin-right: 10vh;
-}
-.barra-navegacion li{
-    display: inline-block;
-    list-style: none;
-}
-.barra-navegacion li a{
-    text-decoration: none;
-    color: rgba(0, 0, 0, 0.441);
-    font-family: 'Open Sans', sans-serif;
-    margin: 10px 10px 10px 10px;
-}
-
 
 /*!------main-----*/
 main{
     font-family: 'Open Sans', sans-serif;
 }
-.imagenes-1 div{
+.parrafo-introductorio{
+    margin: 40px 50px 40px 50px;
+}
+.parrafo-introductorio p{
+    text-align: center;
+    color: rgba(0, 0, 0, 0.62);
+    font-weight: 200;
+}
+
+.tarjeta-bootstrap{
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 50px;
+    justify-content: center
 }
-.imagenes-1 div p{
-    width: 50vh;
-    font-weight: 100;
-    margin-left: 20vh;
+.btn{
+    background-color: rgba(85, 92, 92, 0.275) !important;
+    border: none !important;
 }
-.imagenes-1 div img{
-    width: 100vh;
-    height: 333px;
-    margin-right: 5vh;
+.card{
+    margin: 30px 20px 20px 30px;
 }
 .video-introductorio div{
     display: flex;
 }
 .video-introductorio div iframe{
     width: 100%;
-    height: 80vh;
-    margin-bottom: 50px;
-}
-.imagenes-2 div{
-    display: flex;
-    justify-content: space-around;
-    margin-bottom: 50px;
-}
-.imagenes-2 div img{
-    width: 600px;
-    height: 333px;
-}
-.imagenes-3 div{
-    display: flex;
-    justify-content: space-around;
-    margin-bottom: 50px;
-}
-.imagenes-3 div img{
-    width: 600px;
-    height: 333px;
+    height: 50vh;
+    margin: 10px 0px 50px 0px;
 }
 
-/*!------footer-----*/
+/*!------ footer -----*/
 footer{
     background-color: rgba(0, 0, 0, 0.081);
 }
 .redes {
-    display: flex;
-    justify-content: center;
+    display: grid;
+    grid-template-columns: auto auto;
 }
 .redes img{
     width: 30px;
     height: 30px;
+    opacity: .2 ; 
+}
+.instagram {
+    margin: 20px 10px 20px 90%;
+}
+.whatsapp {
     margin: 20px 10px 20px 10px;
-    opacity: .2 ;
-    
 }
 .scroll{
     position: fixed;
     bottom: 10vh;
-    right: 10vh;
+    right: 10%;
 }
 .scroll img{
     width: 40px;
@@ -150,14 +110,12 @@ footer{
     opacity: .4;
 }
 
-/*!----------------------------------------contacto------------------------------------------*/
-.hoja-contacto{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+/*!---------------------------------------- contacto ------------------------------------------*/
+.introduccion-contacto{
+    text-align: center;
     margin-bottom: 50px;
 }
-.hoja-contacto h2{
+.introduccion-contacto h2{
     font-family: 'Open Sans', sans-serif;
     font-weight: 100;
     color: rgba(0, 0, 0, 0.372);
@@ -218,7 +176,43 @@ footer{
 .boton-enviar input{
     width: 80px;
     height: 50px;
-    border: 1px solid rgba(0, 0, 0, 0.166);
+    border: 1px solid rgba(0, 0, 0, 0.052);
     margin: 10px 10px 10px 0px;
     padding: 5px 5px 5px 5px;
+}
+
+/*!---------------------------------------- media queries ------------------------------------------*/
+/*!------ index -----*/
+/* Eliminar titulo, foto de fondo y botones */ 
+@media (min-width:0px) and (max-width:843px){
+    .presentacion{
+        display: none;
+    }
+    .botones{
+        display: none;
+    }
+}
+/* Tarjetas en una columna */ 
+@media (min-width:0px) and (max-width:700px){
+    .tarjeta-bootstrap{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+/*!------ contacto -----*/
+/* Achicar el ancho */ 
+@media (min-width:0px) and (max-width:441px){
+    .formulario input{
+        width: 50vh;
+    }
+    .localidades{
+        width: 50vh;
+    }
+    .consulta textarea{
+        width: 50vh;
+    }
+    .boton-enviar input{
+        width: 70px;
+    }
 }
