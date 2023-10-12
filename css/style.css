@@ -62,7 +62,7 @@ main{
 
 .tarjeta-bootstrap{
     display: flex;
-    justify-content: center
+    justify-content: center;
 }
 .btn{
     background-color: rgba(85, 92, 92, 0.275) !important;

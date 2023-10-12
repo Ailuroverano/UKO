@@ -1,0 +1,35 @@
+/* Eliminar titulo, foto de fondo y botones */ 
+@media (min-width:0px) and (max-width:843px){
+    header{
+        .presentacion{
+            display: none;
+        }
+        .botones{
+            display: none;
+        }
+    }
+}
+/* Tarjetas en una columna */ 
+@media (min-width:0px) and (max-width:700px){
+    .tarjeta-bootstrap{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+/*!------ contacto -----*/
+/* Achicar el ancho */ 
+@media (min-width:0px) and (max-width:441px){
+    .formulario input{
+        width: 50vh;
+    }
+    .localidades{
+        width: 50vh;
+    }
+    .consulta textarea{
+        width: 50vh;
+    }
+    .boton-enviar input{
+        width: 70px;
+    }
+}

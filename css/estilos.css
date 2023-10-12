@@ -1,0 +1,181 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,500;0,600;1,300;1,400;1,500&display=swap");
+.contenedor-formulario .formulario .nombre, .contenedor-formulario .formulario .correo, .contenedor-formulario .formulario .de-donde-sos, .contenedor-formulario .formulario .consulta {
+  display: flex;
+  flex-direction: column; }
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+header .presentacion {
+  display: flex;
+  width: 100%;
+  height: 90vh;
+  background-image: url("../img/img-7.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed; }
+  header .presentacion h1 {
+    font-size: 200px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+    color: black;
+    position: absolute;
+    bottom: 55vh;
+    left: 45vh;
+    right: 75vh; }
+
+header .botones {
+  width: 300px;
+  position: absolute;
+  bottom: 45vh;
+  left: 75vh;
+  right: 75vh; }
+  header .botones a {
+    text-decoration: none;
+    color: black;
+    background-color: rgba(255, 255, 255, 0.341);
+    padding: 10px;
+    margin: 5px 5px 5px 5px; }
+
+header .barra-navegacion {
+  margin: 10px 0px 10px 0px; }
+
+.main .parrafo-introductorio {
+  margin: 40px 50px 40px 50px; }
+  .main .parrafo-introductorio p {
+    text-align: center;
+    color: rgba(0, 0, 0, 0.62);
+    font-weight: 200; }
+
+.main .tarjeta-bootstrap {
+  display: flex;
+  justify-content: center; }
+  .main .tarjeta-bootstrap .card {
+    margin: 30px 20px 20px 30px; }
+    .main .tarjeta-bootstrap .card .card-body .btn {
+      background-color: rgba(85, 92, 92, 0.275) !important;
+      border: none !important; }
+
+.main .video-introductorio div {
+  display: flex; }
+  .main .video-introductorio div iframe {
+    width: 100%;
+    height: 50vh;
+    margin: 10px 0px 50px 0px; }
+
+.introduccion-contacto {
+  text-align: center;
+  margin-bottom: 50px; }
+  .introduccion-contacto h2 {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 100;
+    color: rgba(0, 0, 0, 0.372); }
+
+.contenedor-formulario .formulario {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  color: rgba(0, 0, 0, 0.372);
+  margin-bottom: 70px; }
+  .contenedor-formulario .formulario .nombre label {
+    margin: 10px 0px 10px 0px; }
+  .contenedor-formulario .formulario .nombre input {
+    border: 1px solid rgba(0, 0, 0, 0.166);
+    width: 70vh;
+    height: 30px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    color: rgba(0, 0, 0, 0.372); }
+  .contenedor-formulario .formulario .correo label {
+    margin: 10px 0px 10px 0px; }
+  .contenedor-formulario .formulario .correo input {
+    border: 1px solid rgba(0, 0, 0, 0.166);
+    width: 70vh;
+    height: 30px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    color: rgba(0, 0, 0, 0.372); }
+  .contenedor-formulario .formulario .de-donde-sos label {
+    margin: 10px 0px 10px 0px; }
+  .contenedor-formulario .formulario .de-donde-sos .localidades {
+    border: 1px solid rgba(0, 0, 0, 0.166);
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 100;
+    color: rgba(0, 0, 0, 0.372);
+    width: 70vh;
+    height: 30px; }
+  .contenedor-formulario .formulario .consulta label {
+    margin: 10px 0px 10px 0px; }
+  .contenedor-formulario .formulario .consulta textarea {
+    width: 70vh;
+    height: 150px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 100;
+    color: rgba(0, 0, 0, 0.372);
+    border: 1px solid rgba(0, 0, 0, 0.166);
+    margin-bottom: 10px; }
+  .contenedor-formulario .formulario .boton-enviar input {
+    width: 80px;
+    height: 50px;
+    border: 1px solid rgba(0, 0, 0, 0.166);
+    margin: 10px 10px 10px 0px;
+    padding: 5px 5px 5px 5px; }
+
+footer {
+  background-color: rgba(0, 0, 0, 0.081); }
+
+.redes {
+  display: grid;
+  grid-template-columns: auto auto; }
+  .redes .instagram {
+    margin: 20px 10px 20px 90%; }
+    .redes .instagram img {
+      width: 30px;
+      height: 30px;
+      opacity: .2; }
+  .redes .whatsapp {
+    margin: 20px 10px 20px 10px; }
+    .redes .whatsapp img {
+      width: 30px;
+      height: 30px;
+      opacity: .2; }
+
+.scroll {
+  position: fixed;
+  bottom: 10vh;
+  right: 10%; }
+  .scroll img {
+    width: 40px;
+    height: 40px;
+    opacity: .4; }
+
+/* Eliminar titulo, foto de fondo y botones */
+@media (min-width: 0px) and (max-width: 843px) {
+  header .presentacion {
+    display: none; }
+  header .botones {
+    display: none; } }
+
+/* Tarjetas en una columna */
+@media (min-width: 0px) and (max-width: 700px) {
+  .tarjeta-bootstrap {
+    display: flex;
+    flex-direction: column;
+    align-items: center; } }
+
+/*!------ contacto -----*/
+/* Achicar el ancho */
+@media (min-width: 0px) and (max-width: 441px) {
+  .formulario input {
+    width: 50vh; }
+  .localidades {
+    width: 50vh; }
+  .consulta textarea {
+    width: 50vh; }
+  .boton-enviar input {
+    width: 70px; } }

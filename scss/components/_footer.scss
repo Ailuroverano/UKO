@@ -1,0 +1,39 @@
+footer{
+    background-color: rgba(0, 0, 0, 0.081);
+}
+.redes{
+    display: grid;
+    grid-template-columns: auto auto;
+    .instagram{
+        margin: 20px 10px 20px 90%;
+        a{
+        }
+        img{
+            width: 30px;
+            height: 30px;
+            opacity: .2 ; 
+        }
+    }
+    .whatsapp{
+        margin: 20px 10px 20px 10px;
+        a{
+        }
+        img{
+            width: 30px;
+            height: 30px;
+            opacity: .2 ; 
+        }
+    }
+}
+.scroll{
+    position: fixed;
+    bottom: 10vh;
+    right: 10%;
+    a{
+    }
+    img{
+        width: 40px;
+        height: 40px;
+        opacity: .4;
+    }
+}

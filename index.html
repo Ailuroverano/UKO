@@ -1,16 +1,32 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/estilos.css">
+    <!--animate.css-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <!--bootstrap-->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
-    <title>Document</title>
+    <meta name="description" content="Descubre UKO, líder en fotografía inmobiliaria Capturamos propiedades con drones, ofrecemos staging virtual y mucho más. Transformamos espacios en experiencias visuales cautivadoras">
+    <!--meta keywords-->
+    <meta name="keywords" content=" fotografia, inmobiliaria, drone, virtual staging, uko, mapas, remax, ">
+    <title>UKO | Fotografía inmobiliaria</title>
+    <!--Favicon-->
+    <link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon">
+    <!--Protocolo OG-->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="UKO | Fotografia inmobiliaria">
+    <meta property="og:url" content="https...">
+    <meta property="og:img" content="">
+    <meta property="og:description" content="Descubre UKO, líder en fotografía inmobiliaria. Capturamos propiedades con drones, ofrecemos staging virtual y mucho más. Transformamos espacios en experiencias visuales cautivadoras">
 </head>
+
 <body>
     <header id="inicio">
         <section class="presentacion">
-            <h1>UKO</h1>
+            <h1 class="animate__animated animate__bounceInDown">UKO</h1>
         </section>
         <div class="botones">
             <a href="./pages/servicios.html">Servicios</a>
@@ -45,9 +61,12 @@
             </nav>
         </div>
     </header>
-    <main>
+    <main class="main">
         <div class="parrafo-introductorio">
-            <p>En UKO Producciones contamos con una amplia trayectoria en el mundo de la producción audiovisual de inmobiliarias, abarcando todo tipo de trabajos, en función a tus necesidades. Desde servicio de grabación hasta vídeo interactivo, pasando por todo un abanico de servicios con diferentes finalidades: promocionar la empresa, un perfil profesional, presentaciones de proyectos.</p>
+            <p>En UKO Producciones contamos con una amplia trayectoria en el mundo de la producción audiovisual de
+                inmobiliarias, abarcando todo tipo de trabajos, en función a tus necesidades. Desde servicio de
+                grabación hasta vídeo interactivo, pasando por todo un abanico de servicios con diferentes finalidades:
+                promocionar la empresa, un perfil profesional, presentaciones de proyectos.</p>
         </div>
         <!--Carrusel con bootstrap-->
         <div id="carouselExampleCaptions" class="carousel slide">
@@ -61,19 +80,19 @@
             </div>
             <div class="carousel-inner">
                 <div class="carousel-item active">
-                    <img src="./img/img-2.jpg" class="d-block w-100" alt="...">
+                    <img src="./img/img-2.jpg" class="d-block w-100" alt="Fotografia desde un drone">
                     <div class="carousel-caption d-none d-md-block">
                         <h5>Fotografía y video profesional</h5>
                         <p>Somos tu nuevo aliado.</p>
                     </div>
                 </div>
                 <div class="carousel-item">
-                    <img src="./img/img-3.jpg" class="d-block w-100" alt="...">
+                    <img src="./img/img-3.jpg" class="d-block w-100" alt="Fotografia pileta">
                     <div class="carousel-caption d-none d-md-block">
                     </div>
                 </div>
                 <div class="carousel-item">
-                    <img src="./img/img-5.jpg" class="d-block w-100" alt="...">
+                    <img src="./img/img-5.jpg" class="d-block w-100" alt="Fotografia de un cocina">
                     <div class="carousel-caption d-none d-md-block">
                     </div>
                 </div>
@@ -92,7 +111,7 @@
         <!--Tarjetas con bootstrap-->
         <div class="tarjeta-bootstrap">
             <div class="card" style="width: 18rem;">
-                <img src="img/img-8.png" class="card-img-top" alt="...">
+                <img src="img/img-8.png" class="card-img-top" alt="Fotografia desde un drone">
                 <div class="card-body">
                     <h5 class="card-title">Drone</h5>
                     <p class="card-text">Necesitás una filmación distinta? Contamos con los mejores pilotos certificados
@@ -101,7 +120,7 @@
                 </div>
             </div>
             <div class="card" style="width: 18rem;">
-                <img src="img/img-9.png" class="card-img-top" alt="...">
+                <img src="img/img-9.png" class="card-img-top" alt="Imagen de un Virtual Staging ">
                 <div class="card-body">
                     <h5 class="card-title">Virtual staging</h5>
                     <p class="card-text">Mostrá las grandes posibilidades que tiene una futura vivienda y no dejes
@@ -110,7 +129,7 @@
                 </div>
             </div>
             <div class="card" style="width: 18rem;">
-                <img src="img/img-10.jpg" class="card-img-top" alt="...">
+                <img src="img/img-10.jpg" class="card-img-top" alt="Imagen de una edición de etiquetas ">
                 <div class="card-body">
                     <h5 class="card-title">Edición con etiquetas</h5>
                     <p class="card-text">Lleva tu video a otro nivel contratando la edición con etiquetas.</p>
@@ -131,11 +150,10 @@
     <footer>
         <div class="redes">
             <div class="instagram">
-                <a href="https://www.instagram.com/uko.producciones/" target="_blank"><img src="./img/instagram.png"
-                        alt="Instagram"></a>
+                <a href="https://www.instagram.com/uko.producciones/" target="_blank"><img src="./img/instagram.png" alt="Logo de Instagram"></a>
             </div>
             <div class="whatsapp">
-                <a href="https://wa.me/5491133079317" target="_blank"><img src="./img/whatsapp.png" alt="Whatsapp"></a>
+                <a href="https://wa.me/5491133079317" target="_blank"><img src="./img/whatsapp.png" alt="Logo de Whatsapp"></a>
             </div>
         </div>
         <div class="scroll">
@@ -144,4 +162,5 @@
     </footer>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js">
 </body>
+
 </html>

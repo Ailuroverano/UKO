@@ -1,0 +1,21 @@
+//Variables de colores
+
+$color-principal: black; 
+$color-secundario: rgba(255, 255, 255, 0.341);
+$color-terciario: rgba(0, 0, 0, 0.372);
+$color-bordes: rgba(0, 0, 0, 0.166);
+
+//Mixin de justify-content
+
+@mixin flex ($flex, $justify){
+    display: $flex;
+    justify-content: $justify;
+}
+
+//Extend de flex-direction
+
+%flex-column{
+    display: flex;
+    flex-direction: column;
+}
+
