@@ -3,6 +3,16 @@
   display: flex;
   flex-direction: column; }
 
+.main-servicios .imagenes-servicios .burbuja-foto-video a, .main-servicios .imagenes-servicios .burbuja-drone-servicio a, .main-servicios .imagenes-servicios .burbuja-tour-virtual a, .main-servicios .imagenes-servicios .burbuja-planos a, .main-servicios .imagenes-servicios .burbuja-edicion-etiquetas a, .main-servicios .imagenes-servicios .burbuja-virtual-staging a {
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.305);
+  border-radius: 10px;
+  text-decoration: none;
+  color: rgba(0, 0, 0, 0.415);
+  box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.312);
+  transition-property: padding;
+  transition-duration: 1s; }
+
 * {
   margin: 0;
   padding: 0;
@@ -12,7 +22,7 @@ header .presentacion {
   display: flex;
   width: 100%;
   height: 90vh;
-  background-image: url("../img/img-7.png");
+  background-image: linear-gradient(rgba(255, 255, 255, 0.38), rgba(0, 0, 0, 0.215)), url("../img/img-7.png");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -24,7 +34,7 @@ header .presentacion {
     color: black;
     position: absolute;
     bottom: 55vh;
-    left: 45vh;
+    left: 60vh;
     right: 75vh; }
 
 header .botones {
@@ -51,7 +61,7 @@ header .barra-navegacion {
   .main .parrafo-introductorio p {
     text-align: center;
     color: rgba(0, 0, 0, 0.62);
-    font-weight: 200; }
+    font-weight: 300; }
 
 .main .tarjeta-bootstrap {
   display: flex;
@@ -69,12 +79,189 @@ header .barra-navegacion {
     height: 50vh;
     margin: 10px 0px 50px 0px; }
 
+.main .parrafo-final-index {
+  margin: 40px 50px 40px 50px;
+  padding: 40px 50px 40px 50px;
+  background-color: rgba(0, 0, 0, 0.04); }
+  .main .parrafo-final-index p {
+    text-align: center;
+    color: rgba(0, 0, 0, 0.62);
+    font-weight: 200; }
+  .main .parrafo-final-index a {
+    text-decoration: none;
+    color: black; }
+
 .main-trabajos .parrafo-trabajos {
-  margin: 40px 50px 40px 50px; }
+  margin: 40px 50px 40px 50px;
+  padding: 40px 50px 40px 50px;
+  background-color: rgba(0, 0, 0, 0.04); }
   .main-trabajos .parrafo-trabajos p {
     text-align: center;
     color: rgba(0, 0, 0, 0.62);
     font-weight: 200; }
+
+.main-trabajos .video-trabajos {
+  width: 100%; }
+  .main-trabajos .video-trabajos iframe {
+    width: 100%; }
+
+.main-trabajos .imagenes-trabajos-1 {
+  margin: 35px 35px 35px 35px;
+  display: flex;
+  justify-content: space-around; }
+  .main-trabajos .imagenes-trabajos-1 img {
+    width: 300px;
+    height: 200px; }
+  .main-trabajos .imagenes-trabajos-1 img:hover {
+    transform: scale(1.1);
+    transition-duration: 1s; }
+
+.main-trabajos .parrafo-final-trabajos {
+  margin: 40px 50px 40px 50px;
+  padding: 40px 50px 40px 50px;
+  background-color: rgba(0, 0, 0, 0.04); }
+  .main-trabajos .parrafo-final-trabajos p {
+    text-align: center;
+    color: rgba(0, 0, 0, 0.62);
+    font-weight: 200; }
+  .main-trabajos .parrafo-final-trabajos a {
+    text-decoration: none;
+    color: black; }
+
+.main-nosotros .text-bg-dark {
+  border-radius: 0px;
+  border-color: none; }
+  .main-nosotros .text-bg-dark .card-img-overlay {
+    border-color: none;
+    width: 50%; }
+    .main-nosotros .text-bg-dark .card-img-overlay .card-title {
+      font-size: 50px;
+      color: white; }
+    .main-nosotros .text-bg-dark .card-img-overlay .card-text {
+      font-size: 20px;
+      color: rgba(255, 255, 255, 0.747); }
+
+.main-nosotros .eleginos .imagen-izquierda {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin: 10px; }
+  .main-nosotros .eleginos .imagen-izquierda img {
+    margin-left: 10%;
+    padding: 10px; }
+  .main-nosotros .eleginos .imagen-izquierda .texto-1 {
+    flex-direction: column;
+    width: 40%;
+    margin: 0px 10px 0px 10%; }
+
+.main-nosotros .eleginos .imagen-derecha {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin: 10px;
+  background-color: rgba(0, 0, 0, 0.124); }
+  .main-nosotros .eleginos .imagen-derecha .texto-2 {
+    flex-direction: column;
+    margin-left: 10%;
+    width: 40%; }
+  .main-nosotros .eleginos .imagen-derecha img {
+    margin-left: 10%;
+    padding: 10px; }
+
+.main-nosotros .unite-nosotros {
+  display: flex;
+  justify-content: center;
+  margin: 40px 10px 40px 10px; }
+  .main-nosotros .unite-nosotros a {
+    text-decoration: none;
+    color: black;
+    background-color: rgba(0, 0, 0, 0.07);
+    padding: 20px;
+    border-radius: 5px; }
+
+.main-nosotros .parrafo-final-nosotros {
+  margin: 40px 50px 40px 50px;
+  padding: 40px 50px 40px 50px;
+  background-color: rgba(0, 0, 0, 0.04); }
+  .main-nosotros .parrafo-final-nosotros p {
+    text-align: center;
+    color: rgba(0, 0, 0, 0.62);
+    font-weight: 200; }
+  .main-nosotros .parrafo-final-nosotros a {
+    text-decoration: none;
+    color: black; }
+
+.main-servicios .imagenes-servicios {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  transition-duration: 4s; }
+  .main-servicios .imagenes-servicios .burbuja-foto-video {
+    position: absolute;
+    margin-left: 70%;
+    margin-top: 10%; }
+  .main-servicios .imagenes-servicios .burbuja-foto-video a:hover {
+    padding: 30px; }
+  .main-servicios .imagenes-servicios .foto-video img {
+    width: 100%;
+    margin: 5px 5px 5px 5px; }
+  .main-servicios .imagenes-servicios .burbuja-drone-servicio {
+    position: absolute;
+    margin-left: 10%;
+    margin-top: 35%; }
+  .main-servicios .imagenes-servicios .burbuja-drone-servicio a:hover {
+    padding: 30px; }
+  .main-servicios .imagenes-servicios .drone-servicio img {
+    width: 100%;
+    margin: 5px 5px 5px 5px; }
+  .main-servicios .imagenes-servicios .burbuja-tour-virtual {
+    position: absolute;
+    margin-left: 70%;
+    margin-top: 60%; }
+  .main-servicios .imagenes-servicios .burbuja-tour-virtual a:hover {
+    padding: 30px; }
+  .main-servicios .imagenes-servicios .tour-virtual img {
+    width: 100%;
+    margin: 5px 5px 5px 5px; }
+  .main-servicios .imagenes-servicios .burbuja-planos {
+    position: absolute;
+    margin-left: 10%;
+    margin-top: 85%; }
+  .main-servicios .imagenes-servicios .burbuja-planos a:hover {
+    padding: 30px; }
+  .main-servicios .imagenes-servicios .planos img {
+    width: 100%;
+    margin: 5px 5px 5px 5px; }
+  .main-servicios .imagenes-servicios .burbuja-edicion-etiquetas {
+    position: absolute;
+    margin-left: 65%;
+    margin-top: 110%; }
+  .main-servicios .imagenes-servicios .burbuja-edicion-etiquetas a:hover {
+    padding: 30px; }
+  .main-servicios .imagenes-servicios .edicion-etiquetas img {
+    width: 100%;
+    margin: 5px 5px 5px 5px; }
+  .main-servicios .imagenes-servicios .burbuja-virtual-staging {
+    position: absolute;
+    margin-left: 10%;
+    margin-top: 135%; }
+  .main-servicios .imagenes-servicios .burbuja-virtual-staging a:hover {
+    padding: 30px; }
+  .main-servicios .imagenes-servicios .virtual-staging img {
+    width: 100%;
+    margin: 5px 5px 5px 5px; }
+
+.main-servicios .parrafo-final-servicios {
+  margin: 40px 50px 40px 50px;
+  padding: 40px 50px 40px 50px;
+  background-color: rgba(0, 0, 0, 0.04); }
+  .main-servicios .parrafo-final-servicios p {
+    text-align: center;
+    color: rgba(0, 0, 0, 0.62);
+    font-weight: 200; }
+  .main-servicios .parrafo-final-servicios a {
+    text-decoration: none;
+    color: black; }
 
 .introduccion-contacto {
   text-align: center;
@@ -179,6 +366,107 @@ footer {
     display: flex;
     flex-direction: column;
     align-items: center; } }
+
+/*!------ Trabajos -----*/
+@media (min-width: 0px) and (max-width: 610px) {
+  .main-trabajos .imagenes-trabajos-1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+    .main-trabajos .imagenes-trabajos-1 img {
+      padding: 10px 0px 10px 0px; } }
+
+@media (min-width: 611px) and (max-width: 800px) {
+  .main-trabajos .imagenes-trabajos-1 img {
+    width: 220px;
+    height: 120px;
+    padding: 0px 10px 0px 10px; } }
+
+@media (min-width: 801px) and (max-width: 1000px) {
+  .main-trabajos .imagenes-trabajos-1 img {
+    width: 250px;
+    height: 150px;
+    padding: 0px 10px 0px 10px; } }
+
+/*!------ Nosotros -----*/
+@media (min-width: 0px) and (max-width: 440px) {
+  .main-nosotros .text-bg-dark {
+    height: 240px; } }
+
+@media (min-width: 441px) and (max-width: 600px) {
+  .main-nosotros .text-bg-dark {
+    height: 200px; } }
+
+@media (min-width: 0px) and (max-width: 670px) {
+  .main-nosotros .text-bg-dark .card-img-overlay .card-title {
+    font-size: 20px; }
+  .main-nosotros .text-bg-dark .card-img-overlay .card-text {
+    font-size: 10px; }
+  .main-nosotros .eleginos .imagen-izquierda {
+    justify-content: center; }
+    .main-nosotros .eleginos .imagen-izquierda img {
+      width: 200px;
+      padding: none;
+      margin: 0px; }
+    .main-nosotros .eleginos .imagen-izquierda .texto-1 p {
+      font-size: 10px; }
+  .main-nosotros .eleginos .imagen-derecha img {
+    width: 200px;
+    padding: none;
+    margin: 0px; }
+  .main-nosotros .eleginos .imagen-derecha .texto-2 p {
+    font-size: 10px; } }
+
+@media (min-width: 671px) and (max-width: 800px) {
+  .main-nosotros .text-bg-dark .card-img-overlay .card-title {
+    font-size: 30px; }
+  .main-nosotros .text-bg-dark .card-img-overlay .card-text {
+    font-size: 10px; }
+  .main-nosotros .eleginos .imagen-izquierda {
+    justify-content: center; }
+    .main-nosotros .eleginos .imagen-izquierda img {
+      width: 300px;
+      padding: none;
+      margin: 0px; }
+    .main-nosotros .eleginos .imagen-izquierda .texto-1 p {
+      font-size: 10px; }
+  .main-nosotros .eleginos .imagen-derecha img {
+    width: 300px;
+    padding: none;
+    margin: 0px; }
+  .main-nosotros .eleginos .imagen-derecha .texto-2 p {
+    font-size: 10px; } }
+
+@media (min-width: 801px) and (max-width: 1200px) {
+  .main-nosotros .text-bg-dark .card-img-overlay .card-title {
+    font-size: 40px; }
+  .main-nosotros .text-bg-dark .card-img-overlay .card-text {
+    font-size: 12px; }
+  .main-nosotros .eleginos .imagen-izquierda {
+    justify-content: center; }
+    .main-nosotros .eleginos .imagen-izquierda img {
+      width: 300px;
+      padding: none;
+      margin: 0px; }
+    .main-nosotros .eleginos .imagen-izquierda .texto-1 p {
+      font-size: 13px; }
+  .main-nosotros .eleginos .imagen-derecha img {
+    width: 300px;
+    padding: none;
+    margin: 0px; }
+  .main-nosotros .eleginos .imagen-derecha .texto-2 p {
+    font-size: 13px; } }
+
+@media (min-width: 1001px) and (max-width: 1200px) {
+  .main-nosotros .text-bg-dark .card-img-overlay .card-title {
+    font-size: 40px; }
+  .main-nosotros .text-bg-dark .card-img-overlay .card-text {
+    font-size: 17px; } }
+
+/*!------ Servicios -----*/
+@media (min-width: 0px) and (max-width: 500px) {
+  .main-servicios a {
+    font-size: 10px; } }
 
 /*!------ contacto -----*/
 /* Achicar el ancho */

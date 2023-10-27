@@ -1,0 +1,126 @@
+.main-servicios{
+    .imagenes-servicios{
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        transition-duration: 4s;
+            .burbuja-foto-video{
+                position: absolute;
+                margin-left: 70%;
+                margin-top: 10%;
+                a{
+                    @extend %burbujas-servicios;
+                }
+            }
+            .burbuja-foto-video a:hover{
+                padding: 30px;
+            }
+            .foto-video{
+                img{
+                    width: 100%;
+                    margin: 5px 5px 5px 5px;
+                }
+            }
+        .burbuja-drone-servicio{
+            position: absolute;
+            margin-left: 10%;
+            margin-top: 35%;
+            a{
+                @extend %burbujas-servicios;
+            }
+        }
+        .burbuja-drone-servicio a:hover{
+            padding: 30px;
+        }
+        .drone-servicio{
+            img{
+                width: 100%;
+                margin: 5px 5px 5px 5px;
+            }
+        }
+        .burbuja-tour-virtual{
+            position: absolute;
+            margin-left: 70%;
+            margin-top: 60%;
+            a{
+                @extend %burbujas-servicios;
+            }
+        }
+        .burbuja-tour-virtual a:hover{
+            padding: 30px;
+        }
+        .tour-virtual{
+            img{
+                width: 100%;
+                margin: 5px 5px 5px 5px;
+            }
+        }
+        .burbuja-planos{
+            position: absolute;
+            margin-left: 10%;
+            margin-top: 85%;
+            a{
+                @extend %burbujas-servicios;
+            }
+        }
+        .burbuja-planos a:hover{
+            padding: 30px;
+        }
+        .planos{
+            img{
+                width: 100%;
+                margin: 5px 5px 5px 5px;
+            }
+        }
+        .burbuja-edicion-etiquetas{
+            position: absolute;
+            margin-left: 65%;
+            margin-top: 110%;
+            a{
+                @extend %burbujas-servicios;
+            }
+        }
+        .burbuja-edicion-etiquetas a:hover{
+            padding: 30px;
+        }
+        .edicion-etiquetas{
+            img{
+                width: 100%;
+                margin: 5px 5px 5px 5px;
+            }
+        }
+        .burbuja-virtual-staging{
+            position: absolute;
+            margin-left: 10%;
+            margin-top: 135%;
+            a{
+                @extend %burbujas-servicios;
+            }
+        }
+        .burbuja-virtual-staging a:hover{
+            padding: 30px;
+        }
+        .virtual-staging{
+            img{
+                width: 100%;
+                margin: 5px 5px 5px 5px;
+            }
+        }
+    }
+    .parrafo-final-servicios{
+        margin: 40px 50px 40px 50px;
+        padding: 40px 50px 40px 50px;
+        background-color: rgba(0, 0, 0, 0.04);
+        p{
+            text-align: center;
+            color: rgba(0, 0, 0, 0.62);
+            font-weight: 200;
+        }
+        h5{
+        }
+        a{
+            text-decoration: none;
+            color: black;
+        }
+    }
+}

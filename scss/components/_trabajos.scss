@@ -1,10 +1,52 @@
 .main-trabajos{
     .parrafo-trabajos{
         margin: 40px 50px 40px 50px;
+        padding: 40px 50px 40px 50px;
+        background-color: rgba(0, 0, 0, 0.04);
         p{
             text-align: center;
             color: rgba(0, 0, 0, 0.62);
             font-weight: 200;
         }
     }
-}
+    .video-trabajos{
+        width: 100%;
+        iframe{
+            width: 100%;
+
+        }
+    }
+    .imagenes-trabajos-1{
+        margin: 35px 35px 35px 35px;
+        display: flex;
+        justify-content: space-around;
+        img{
+            width: 300px;
+            height: 200px;
+        }
+        img:hover{
+        transform: scale(1.1);
+        transition-duration: 1s;
+
+        
+    }
+    }
+    .parrafo-final-trabajos{
+        margin: 40px 50px 40px 50px;
+        padding: 40px 50px 40px 50px;
+        background-color: rgba(0, 0, 0, 0.04);
+        p{
+            text-align: center;
+            color: rgba(0, 0, 0, 0.62);
+            font-weight: 200;
+        }
+        h5{
+        }
+        a{
+            text-decoration: none;
+            color: black;
+        }
+    }
+    }
+
+
